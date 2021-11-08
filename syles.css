@@ -1,3 +1,6 @@
+body{
+ align-content: center;
+}
 input {
     padding: 25px;
     color: rgb(255, 255, 255);
@@ -9,4 +12,28 @@ input {
     outline: none;
     border-radius: 4px;
   }
+  h1 {
+    text-align: left;
+    margin-bottom: 1.5%;
+    color: rgb(54, 25, 25);
+  }
+  .container {
+    width: 300px;
+  }
+  button {
+    border: none;
+    background-color: rgb(39, 36, 36);
+    padding: 8px;
+    color: white;
+    margin: 2px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: 200;
+   
+  }
+
+ 
+
   
