@@ -19,6 +19,7 @@ let minus = document.getElementById("btn-minus")
 let multiply = document.getElementById("btn-multiply")
 let devide = document.getElementById("btn-devide") 
 let equals = document.getElementById("btn-equalls")
+let clear = document.getElementById("btn-clear") 
 
 
 // The result form
@@ -64,3 +65,27 @@ numberOne.addEventListener ("click", function(){
 numberZero.addEventListener ("click", function(){
         calculator(0);
     })
+
+plus.addEventListener ("click", function(){
+        calculator("+");
+    })
+minus.addEventListener ("click", function(){
+        calculator("-");
+    })
+multiply.addEventListener ("click", function(){
+        calculator("*");
+    })
+devide.addEventListener ("click", function(){
+        calculator("/");
+    })
+
+// The euqual sign operator
+equals.addEventListener ("click", function(){
+    results.value= eval(results.value)
+})
+
+//The clear button
+
+clear.addEventListener ("click", function(){
+    results.value= ""
+})
