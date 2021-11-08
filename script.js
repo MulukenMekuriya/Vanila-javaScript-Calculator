@@ -23,5 +23,44 @@ let equals = document.getElementById("btn-equalls")
 
 // The result form
 let results = document.getElementById("result")
-let btnResult = document.getElementById("btn-result")
-let textResult = document.getElementById("text-result")
+
+
+function calculator (number){
+
+    if(results.value=="undefined"){
+        results.value=""
+    }
+    results.value += number;
+}
+
+// Onclick event listner for all buttons
+numberNine.addEventListener ("click", function(){
+    calculator(9);
+    })
+numberEight.addEventListener ("click", function(){
+        calculator(8);
+    })
+numberSeven.addEventListener ("click", function(){
+        calculator(7);
+    })  
+numberSix.addEventListener ("click", function(){
+        calculator(6);
+    }) 
+numberFive.addEventListener ("click", function(){
+        calculator(5);
+    })
+numberFour.addEventListener ("click", function(){
+        calculator(4);
+    })
+numberThree.addEventListener ("click", function(){
+        calculator(3);
+    })
+numberTwo.addEventListener ("click", function(){
+        calculator(2);
+    })
+numberOne.addEventListener ("click", function(){
+        calculator(1);
+    })
+numberZero.addEventListener ("click", function(){
+        calculator(0);
+    })
